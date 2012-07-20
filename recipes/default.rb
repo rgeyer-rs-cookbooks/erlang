@@ -19,6 +19,8 @@
 # limitations under the License.
 #
 
+rightscale_marker :begin
+
 case node[:platform]
 when "debian", "ubuntu"
   erlpkg = node[:erlang][:gui_tools] ? "erlang" : "erlang-nox"
@@ -37,3 +39,5 @@ when "redhat", "centos", "scientific"
 else
   package "erlang"
 end
+
+rightscale_marker :end

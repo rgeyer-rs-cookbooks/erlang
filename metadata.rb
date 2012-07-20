@@ -3,7 +3,9 @@ maintainer_email  "cookbooks@opscode.com"
 license           "Apache 2.0"
 description       "Installs erlang, optionally install GUI tools."
 version           "1.0.0"
+
 depends           "yum", ">= 0.5.0"
+depends           "rightscale"
 
 recipe "erlang", "Installs erlang"
 
